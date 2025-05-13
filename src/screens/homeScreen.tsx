@@ -14,5 +14,6 @@ const styles = StyleSheet.create({
     flex: 1, // ocupa toda a tela
     justifyContent: 'center', // centraliza verticalmente
     alignItems: 'center',     // centraliza horizontalmente
+    backgroundColor: 'red'
   },
 });
