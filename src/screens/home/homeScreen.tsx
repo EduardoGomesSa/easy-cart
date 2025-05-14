@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text>Nova tela funcionando</Text>
+      <Text>Nova tela funcionando 42</Text>
     </View>
   );
 }
