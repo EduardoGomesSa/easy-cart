@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function HomeScreen() {
+export default function HistoricScreen() {
   return (
     <View style={styles.container}>
-      <Text>Nova tela funcionando 42</Text>
+      <Text>Tela de Histórico de Compras</Text>
     </View>
   );
 }
@@ -14,6 +14,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center', 
-    backgroundColor: 'red'
+    backgroundColor: 'pink'
   },
 });
