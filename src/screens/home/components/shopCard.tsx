@@ -8,13 +8,13 @@ type ShopCardProps = {
     date: string;
 }
 
-export default function ShopCard({title, price, date} : ShopCardProps) {
+export default function ShopCard({ title, price, date }: ShopCardProps) {
     const router = useRouter()
 
     const handlePress = () => {
         router.push({
             pathname: '/shop',
-            params: {title, price, date}
+            params: { title, price, date }
         })
     }
 
