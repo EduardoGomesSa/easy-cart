@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import ShopCard from './components/shopCard';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text>Nova tela funcionando 42</Text>
+      <ShopCard />
     </View>
   );
 }
