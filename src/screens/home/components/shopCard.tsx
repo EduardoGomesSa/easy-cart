@@ -1,5 +1,6 @@
+import { useRouter } from 'expo-router';
 import React, { useState } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Pressable, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 type ShopCardProps = {
     title: string;
@@ -8,17 +9,26 @@ type ShopCardProps = {
 }
 
 export default function ShopCard({title, price, date} : ShopCardProps) {
+    const router = useRouter()
+
+    const handlePress = () => {
+        router.push({
+            pathname: '/shop',
+            params: {title, price, date}
+        })
+    }
+
     const [checked, setChecked] = useState(false)
 
     return (
-        <View style={styles.card}>
+        <Pressable style={styles.card} onPress={handlePress}>
             <TouchableOpacity
                 style={[styles.checkbox, checked && styles.checkedBox]}
                 onPress={() => setChecked(!checked)} />
             <Text style={styles.title}>{title}</Text>
             <Text style={styles.price}>{price}</Text>
             <Text style={styles.date}>{date}</Text>
-        </View>
+        </Pressable>
     );
 }
 
