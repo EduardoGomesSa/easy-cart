@@ -1,3 +1,4 @@
+import AddButton from '@/src/components/addButton';
 import Header from '@/src/components/header';
 import { shops } from '@/src/constants/shops';
 import React from 'react';
@@ -12,6 +13,7 @@ export default function HomeScreen() {
       {shops.map((item, index) => (
         <ShopCard key={index} {...item} />
       ))}
+      <AddButton onPress={()=>{}} />
     </ScrollView>
   );
 }
