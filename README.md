@@ -19,5 +19,8 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
+## Modelo ER
+<img src="https://github.com/user-attachments/assets/ebd39ec4-de2b-4233-b756-66e5b3e04918" width=450 />
+
 ##
 <p align="center">  🚧 Em Desenvolvimento 🚧</p>
