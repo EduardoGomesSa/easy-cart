@@ -1,3 +1,4 @@
+import { Item } from '@/src/models/item';
 import { useRouter } from 'expo-router';
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, TouchableOpacity } from 'react-native';
@@ -6,9 +7,10 @@ type ShopCardProps = {
     title: string;
     price: string;
     date: string;
+    items: Item[]
 }
 
-export default function ShopCard({ title, price, date }: ShopCardProps) {
+export default function ShopCard({ title, price, date, items }: ShopCardProps) {
     const router = useRouter()
 
     const handlePress = () => {
