@@ -37,6 +37,8 @@ export default function ItemCard({ name, amount, price, onEdit, onDelete } : Ite
 const styles = StyleSheet.create({
     card: {
         backgroundColor: "#1e90ff",
+        borderColor: "red",
+        borderWidth: 1,
         borderRadius: 10,
         padding: 10,
         marginVertical: 5,
@@ -59,7 +61,13 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "flex-end",
         gap: 12,
-        backgroundColor: "white"
+        backgroundColor: "white",
+
+        paddingHorizontal: 10,
+        paddingVertical: 4,
+        borderBottomLeftRadius: 10,
+        borderBottomRightRadius: 10,
+        width: "100%",
     },
     icoonButton: {
         flexDirection: "row",
