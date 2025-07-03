@@ -4,9 +4,13 @@
    É um projeto desenvolvido em React-Native para ajudar usuários a controlarem suas compras. Onde também será utilizada uma ferramenta de 
    inteligência artifícial para realizaqr uma análise sobre o histórico.  
 </p>
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+## Funcionalidades:
+- CRUD de compras
+- Gráficos
+- Análise produzido por uma IA
+
+## Configuração do ambiente:
 
 1. Install dependencies
 
