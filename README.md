@@ -2,8 +2,13 @@
 ## Sobre
 <p>
    É um projeto desenvolvido em React-Native para ajudar usuários a controlarem suas compras. Onde também será utilizada uma ferramenta de 
-   inteligência artifícial para realizaqr uma análise sobre o histórico.  
+   inteligência artifícial para realizar uma análise sobre o histórico, passando ao usuário informações úteis.  
 </p>
+
+## Tecnologias:
+- React Native
+- NPM
+- SQLite
 
 ## Funcionalidades:
 - CRUD de compras
