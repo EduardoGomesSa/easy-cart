@@ -1,11 +1,13 @@
 import AddButton from '@/src/components/addButton';
 import Header from '@/src/components/header';
 import { shops } from '@/src/constants/shops';
-import React from 'react';
+import React, { useState } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
+import TaskAddModal from './components/modals/addShop';
 import ShopCard from './components/shopCard';
 
 export default function HomeScreen() {
+  const [modalVisible, setModalVisible] = useState(false);
 
   return (
     <View style={styles.container}>
@@ -16,7 +18,8 @@ export default function HomeScreen() {
       ))}
       
     </ScrollView>
-    <AddButton onPress={()=>{}} />
+    <AddButton onPress={() => setModalVisible(true)} />
+      <TaskAddModal visible={modalVisible} onClose={() => setModalVisible(false)} />
     </View>
   );
 }
