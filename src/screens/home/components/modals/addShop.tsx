@@ -6,6 +6,7 @@ import {
   Modal,
   Platform,
   StyleSheet,
+  Text,
   TextInput,
   TouchableWithoutFeedback,
   View,
@@ -26,6 +27,7 @@ export default function TaskAddModal({ visible, onClose }: TaskAddModalProps) {
       visible={visible}
       onRequestClose={onClose}
     >
+      
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View style={styles.overlay}>
           <KeyboardAvoidingView
@@ -33,6 +35,7 @@ export default function TaskAddModal({ visible, onClose }: TaskAddModalProps) {
             style={styles.container}
           >
             <View style={styles.content}>
+              <Text style={styles.title}>Informe um título para a compra</Text>
               <TextInput
                 placeholder="Digite a tarefa"
                 style={styles.input}
@@ -70,5 +73,11 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 12,
     marginBottom: 16,
+  },
+  title: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 12,
+    textAlign: 'center',
   },
 });
